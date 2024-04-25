@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.sidearmsports.com/sidearm_v2/2021-08-16-883562/sidearm_font_v2.css">
+    <link rel="stylesheet" href="https://d3jycsk0m72ya7.cloudfront.net/less/sidearm-responsive-grid.less?_=638023734080148547">
+    <link href="https://usctrojans.com/site/site.less" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USC Trojans Ice Hockey</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F1F1F1;
+            color: #333;
+        }
+        header {
+            background-color: #990000;
+            color: #FFF;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #990000;
+            color: #FFF;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .tickets-page-button {
+            -webkit-appearance: none;
+            display: inline-block;
+            border: none;
+            background: none;
+            margin: 0;
+            margin-top: 12px;
+            padding: 5px 20px;
+            border-radius: 0px;
+            background: #9d2235;
+            color: #fff !important;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: .25s;
+        }
+
+        .tickets-page-button a {
+            color:#fff;
+            text-decoration:none;
+        }
+        .tickets-page-button:hover {
+            background: #7e2730;
+        }
+
+        .tickets-page-button-small {
+        -webkit-appearance: none;
+            display: inline-block;
+            border: none;
+            background: none;
+            margin-top: 5px;
+            padding: 6px;
+            border-radius: 0px;
+            background: #9d2235;
+            color: #fff !important;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: .25s;
+        }
+
+        .tickets-page-button-small a {
+            color:#fff;
+            text-decoration:none;
+        }
+        .tickets-page-button-small:hover {
+            background: #7e2730;
+        }
+
+        .tickets-page-button-2 {
+            -webkit-appearance: none;
+            display: inline-block;
+            border: none;
+            background: none;
+            margin: 0;
+            margin-top: 12px;
+            padding: 10px;
+            width:100%;
+            border-radius: 0px;
+            background: #9d2235;
+            color: #fff !important;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: .25s;
+        }
+
+        .tickets-page-button-2 a {
+            color:#fff;
+            text-decoration:none;
+        }
+        .tickets-page-button-2:hover {
+            background: #7e2730;
+        }
+        .game-promotion{
+            margin-top:5px;
+        }
+        .sidearm-schedule .sidearm-schedule-game .sidearm-schedule-game-coverage img {
+            display:block;
+        }
+
+        img.hide-on-x-large {
+            display:block;
+        }
+
+        .sidearm-schedule-game-promotion-name {
+            color:#9d2235;
+            font-weight:bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            .desktop-graphic{
+            display:none;
+            }
+        }
+    
+        @media screen and (min-width: 601px) {
+            .mobile-graphic{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="secondary-header">
+        <div class="secondary-header__inner row pad-large h-100 flex flex-justify-end">
+            <div class="secondary-header__links">
+                <a class="secondary-header__tickets" href="">Buy Tickets</a>
+                <a class="secondary-header__calendar hide-large" href="" aria-label="View calendar">
+                <span class="sf-calendar sidearm-icon reset-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="secondary-header__icons">
+                <div class="ad icons-ad" data-bind="css: css_class">
+                    <a class="icons-ad__link" href="https://www.instagram.com/usctrojanhockey" title="Instagram" target="_blank" tabindex="0">
+                        <span class="sidearm-icon sf-instagram" aria-hidden="true" data-bind="css: icon"></span>
+                        <span class="icons-ad__label" data-bind="text: title">Instagram</span>
+                        <span class="external-link a11y-hide">Opens in new window</span>
+                    </a>
+                </div>
+                <div class="ad icons-ad" data-bind="css: css_class">
+                    <a class="icons-ad__link" href="https://twitter.com/uschockey?lang=en" title="X/Twitter" target="_blank" tabindex="0">
+                        <span class="sidearm-icon sf-twitter" aria-hidden="true" data-bind="css: icon"></span>
+                        <span class="icons-ad__label" data-bind="text: title">X/Twitter</span>
+                        <span class="external-link a11y-hide">Opens in new window</span>
+                    </a>
+                </div>
+                <div class="ad icons-ad" data-bind="css: css_class">
+                    <a class="icons-ad__link" href="https://www.tiktok.com/@uschockey" title="Facebook" target="_blank" tabindex="0">
+                        <span class="sidearm-icon sf-tiktok" aria-hidden="true" data-bind="css: icon"></span>
+                        <span class="icons-ad__label" data-bind="text: title">TikTok</span>
+                        <span class="external-link a11y-hide">Opens in new window</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        USC Trojans Ice Hockey
+    </header>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#news">News</a> |
+        <a href="#contact">Contact</a> |
+        <a href="#about">About</a>
+    </nav>
+    <!-- Content goes here -->
+    <footer>
+        © 2024 USC Trojans
+    </footer>
+</body>
+</html>
